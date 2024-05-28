@@ -8,5 +8,39 @@
 </head>
 <body>
 <a th:href="@{/}">home page</a>
+<br />
+
+<img src="/images/b.jpg"/>
+<figure>
+    <img th:src="@{/images/forest.jpg}" alt="Beautiful" title="Very beautiful picture" weidth="1280" height="720">
+    <figcaption>
+       Это очень красивый вид на горы и озеро!
+    </figcaption>
+</figure>
+
+<p><img th:src="@{images/bird.gif}" width="100" height="100"> В мире много разных красивых птиц В мире много разных красивых птиц
+    В мире много разных красивых птиц В мире много разных красивых птиц В мире много разных красивых птиц</p>
+<br />
+<img th:src="@{images/bird.gif}">
+<p> В мире много разных красивых птиц В мире много разных красивых птиц
+    В мире много разных красивых птиц В мире много разных красивых птиц В мире много разных красивых птиц</p>
+<br />
+<p>В мире много разных красивых птиц В мире много разных красивых птиц
+    В мире много разных красивых птиц <img th:src="@{images/bird.gif}" title="Красивая птица!" width="100" height="100">
+    В мире много разных красивых птиц В мире много разных красивых птиц</p>
+
+<table>
+    <tr>
+        <th scope="col">Name</th>
+        <th>Cost</th>
+        <th>Among</th>
+    </tr>
+    <tr>
+        <td>Apple</td>
+        <td>20$</td>
+        <td>5</td>
+    </tr>
+</table>
+
 </body>
 </html>

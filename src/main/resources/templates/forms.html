@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<html>
+<head>
+    <title>Forms</title>
+</head>
+<body>
+<h1>FORMS</h1>
+<label for="text">User name</label>
+<input th:type="text" maxlength="30" name="userName" id="text"/>
+<br/>
+<label for="password">Password</label>
+<input th:type="password" maxlength="7" name="userPassword" id="password"/>
+<br/>
+
+<textarea name="textArea">Your comment</textarea>
+<br/>
+
+<input type="radio" name="genre" value="pop" checked="checked"/>
+<span>Попса</span>
+<input type="radio" name="genre" value="jazz"/>
+<span>Джаз</span>
+<input type="radio" name="genre" value="rock"/>
+<span>Рок</span>
+<br/>
+
+<select name="gadget" size="3" multiple="multiple">
+    <option value="ipod">Ipod</option>
+    <option value="samsung">Samsung</option>
+    <option selected="selected" value="siemens">Siemens</option>
+</select>
+<br/>
+
+<form th:method="get" th:action="@{/regist}">
+    <input th:type="image" th:src="@{/images/sub.png}" width="150" height="150" title="подпишись">
+</form>
+Button <input type="text"/>
+<br/>
+
+<fieldset>
+    <legend>Контактная информация</legend>
+    <label>Phone: <br/> <input type="text" required title="required"/></label> <br/>
+    <label>Email: <br/> <input type="text"></label> <br/>
+    <label>Adress: <br/> <input type="text"></label> <br/>
+</fieldset>
+
+<form th:method="get" th:action="@{/array}">
+    <input type="date" name="departure">
+    <input type="submit" value="Отправить">
+</form>
+<br/>
+<label>Email:<input type="email" name="email"/></label>
+<br/>
+<label>URL:<input type="url" name="url"/></label>
+<br/>
+<input type="search" placeholder="Buy a horse" name="buy">
+<form th:method="GET" th:action="@{/array/url}">
+    <select name="refer">
+        <option value="google">Google</option>
+        <option value="yandex">Yandex</option>
+    </select>
+    <button>Go</button>
+</form>
+<!--Здесь должен был находиться какой-нибудь комментарий-->
+
+</body>
+</html>
+

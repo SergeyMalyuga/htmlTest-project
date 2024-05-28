@@ -6,17 +6,30 @@
     <title>html test</title>
 </head>
 <body>
+
+<img th:src="@{/images/b.jpg}"/>
+
+
 <h1 th:id="welcome"> Welcome to study</h1>
-<hr />
+<hr/>
 <p><u><b><i> My name is Sergey<sup>2</sup></i></b></u></p>
-<p><th:abbr title ="Пpoфeccop">Пp. </th:abbr></p>
+<p>
+    <th:abbr title="Пpoфeccop">Пp.</th:abbr>
+</p>
+
 <details>
     <summary>Nasa</summary>
-    <p>Нацио нальное агентство по аэронавтике и исследованию космического пространства</p>
+    <p>Национальное агентство по аэронавтике и исследованию космического пространства</p>
 </details>
+
 <p>Это <cite title="https://habr.com/ru/articles/350862/">учебник </cite>по thymleaf</p>
-<br />
-<p>Это была <del> худшая </del>  <ins>лyчшaя</ins> из ее идей</p>
+<br/>
+
+<p>Это была
+    <del> худшая</del>
+    <ins>лyчшaя</ins>
+    из ее идей
+</p>
 
 <ol>
     <li>Купить трусы</li>
@@ -32,28 +45,33 @@
         <li>Car by design</li>
     </ul>
 </ul>
-    <dl>
-        <dt>Корова</dt>
-        <dd>Парнокопытное животное!</dd>
-    </dl>
+
+<dl>
+    <dt>Корова</dt>
+    <dd>Парнокопытное животное!</dd>
+</dl>
 
 <ul>
     <li><a th:href="@{https://www.kinopoisk.ru}"><b>КИНОПОИСК</b></a></li>
 </ul>
-<a th:href="@{/simple}">simple page</a>
 
+<a th:href="@{/simple}">simple page</a>
+<br />
+<a th:href="@{/forms}">form's page</a>
+<br />
 <a th:href="@{mailto:sergey@yandex.ru}">Send me email</a>
+<br />
 <a th:href="@{http://www.imdb.com}" th:target="_blank">Open in new window</a>
-<br />
-<br />
+<br/>
+<br/>
 
 <h1 id="top">Термины, используемые при съемке фильмов </h1>
-<br />
+<br/>
 
 <a href="#zoom">Трансфокация</a>
-<br />
+<br/>
 <a th:href="#{interlude}">Интepлюдия </a>
-    <br />
+<br/>
 <a href="#prologue">Пpoлoг </a>
 
 
@@ -237,16 +255,16 @@
     <li>1</li>
 </ul>
 
-<br />
-<h2  id="zoom">Трансфокация</h2>
-    <p> Плавный наезд на объект съемки или отъезд от него камерой.</p>
-        <h2 id="interlude">Интepлюдия</h2>
-            <p> Короткая вводная сцена или последова тель ность
-            сцен, появляющаяся в фильме, но не обязательно с в язанная с основным сюжетом .</p>
-            <h2 id="prologue">Пpoлoг</h2 >
-                <p> Речь, введение или короткая сцена, основ ному действию сюжета фильма ;
-                эпилогу.</p>
-                <p><a th:href="#{top}">Haвepx</a></p>
-                <p><a th:href="#{welcome}">Up</a></p>
+<br/>
+<h2 id="zoom">Трансфокация</h2>
+<p> Плавный наезд на объект съемки или отъезд от него камерой.</p>
+<h2 id="interlude">Интepлюдия</h2>
+<p> Короткая вводная сцена или последова тель ность
+    сцен, появляющаяся в фильме, но не обязательно с в язанная с основным сюжетом .</p>
+<h2 id="prologue">Пpoлoг</h2>
+<p> Речь, введение или короткая сцена, основ ному действию сюжета фильма ;
+    эпилогу.</p>
+<p><a th:href="#{top}">Haвepx</a></p>
+<p><a th:href="#{welcome}">Up</a></p>
 </body>
 </html>
